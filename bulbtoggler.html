@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb toggler</title>
+</head>
+<body>
+    <img src="turned-off.png" alt="off" id="bulb" height="100px">
+    <br> <br>
+    <button type="button" onclick="toggleBulb()">
+        Toggle
+    </button>
+    <script>
+        const bulbElement = document.getElementById('bulb');
+        let state = false;function toggleBulb() 
+        {
+            if(state==false)   
+            {
+                bulbElement.src = 'light-bulb.png';
+                state = true;
+            }  
+            else
+            {
+                bulbElement.src = 'turned-off.png';
+                state = false;
+            }
+        }
+    </script>
+</body>
+</html>
